@@ -3,7 +3,7 @@
 *print_alphabeth-Entry point
 *Return:(0)
 */
-void print_alphabeth(void)
+void print_alphabet(void)
 {
 	char c = 'a';
 
