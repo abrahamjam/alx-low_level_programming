@@ -1,4 +1,4 @@
-#include "main.h">
+#include "main.h"
 /**
 *print-alphabet-A program that prints alphabet in lower case
 *Return:(0)
@@ -12,5 +12,4 @@ void print_alphabet(void)
 		_putchar(n);
 	}
 	_putchar('\n');
-	return (0);
 }
