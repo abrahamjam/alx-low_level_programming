@@ -4,19 +4,24 @@
  *followed by a new line
 Return:(0)
 */
-void more_numbers(void)
+void print_square(int size)
 {
-	int i, j;
-
-	for (i = 0; i < 10; i++)
+	if (size <= 0)
 	{
-		for (j = 0; j < 15; j++)
-		{
-			if (j >= 10)
-				_putchar( / 10 + '0');
-			_putchar(j % 10 + '0');
-		}
-		_putcar(j % 10 + '0');
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		int i, j;
+
+		for (i = 0; i < size; i++)
+		{
+			for (j - 0; j < size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	}
 }
+
