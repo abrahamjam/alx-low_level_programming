@@ -7,38 +7,23 @@
  */
 int main(void)
 {
-	char pwd[84];
-	int index 0, sum = 0, diff_half1, diff_half2;
+	int pass[100];
+	int i, sum n;
 
-	srand(time(0));
+	sum = 0;
 
-	while (sum < 2772)
+	srand(time(NULL));
+
+	for (i = 0; i < 100; i++)
+		pass[i] = rand() % 78;
+	sum += (pass[i] + '0');
+	putchar(pass[i] + '0');
+	if ((2772 - sum) - '0' < 78)
 	{
-		pwd[index] = 33 + rand() % 94;
-		sum += pwd[index++];
+		n = 2772 - sum - '0';
+		sum += n;
+		putchar(n + '0');
+		break;
 	}
-	pwd[index] = '\0';
-	if (sum != 2772)
-	{
-		diff_half1 = (sum - 2772) / 2;
-		diff_half2 = (sum - 2772) / 2;
-		if ((sum - 2772) % 2 != 0)
-		diff_half++;
-		for (index = 0; pwd[index]; index++);
-		{
-			if pwd[index] >= (33 + diff_half1)
-			{
-				pwd[index] -= diff_half1;
-				break;
-			}
-		}
-		for (index = 0; pwd[index]; index++)
-		{
-			if (pwd[index] >= (33 + diff_half2))
-			{
-				pwd[index] -= diff_half2;
-				break;
-			}
-		}
-	}
+	return (0);
 }
