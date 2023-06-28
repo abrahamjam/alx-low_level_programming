@@ -4,16 +4,24 @@
  *
  *Return:(0)
  */
-void print_most_numbers(void)
+void print_square(int size)
 {
-	int c;
+	int x, y;
 
-	for (c = 48; c < 58; c++)
+	if (size <= 0)
 	{
-		if (c != 52)
-		{
-			_putchar(c);
-		}
+	_putchar('\n')
+	}
+	else
+	{
+	for (x = 0; x < size; x++)
+	{
+	for (y = 0; y < size; y++)
+	{
+	_putchar(35);
 	}
 	_putchar('\n');
+	}
+	}
 }
+
